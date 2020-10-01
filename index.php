@@ -268,13 +268,13 @@ function getEmi($t){
     <?php 
 if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['years'])){
     if(empty($_POST['principal'])){
-        $error = "Amount of the loan Cant't Be Empty.<br />";
+        <?php echo $lang['principal_amount']; ?><br />;
     }
     else if(empty($_POST['interest'])){
-        $error= "Annual percentage rate of interest Cant't Be Empty. <br />";
+        <?php echo $lang['interest']; ?><br />";
     }
     else if(empty($_POST['years'])){
-        $error= "Repayment period in years Cant't Be Empty. <br />";
+        <?php echo $lang['years']; ?><br />";
     }
     else {
         //simple chart dispaly here 
